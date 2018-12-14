@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <input type="text" [(ngModel)]="name">
+    <!-- directive : listen to anything you input here and store it in this name proerty-->
+    <h1>
+      {{name}}
+    </h1>
+    <hr>
+    <div class="col-xs-12">
+      <hr>
+      <app-servers></app-servers>
+      <hr>
+
+      <app-courses></app-courses>
+      <hr>
+    </div>
+
+
+  </div>
+</div>
+
+<div>Biuilding Re-usable Components</div>
+
+<!-- <app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged()"></app-favorite> -->
